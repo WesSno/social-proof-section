@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+/* font-family: 'League Spartan', sans-serif; */
+
+:root {
+  
+  /**************** PRIMARY ***************/
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+
+  /**************** NEUTRAL *************/
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/************************ 1440PX ********************/
+
+body {
+  font-size: 15px;
+}
+
+main {
+  font-family: "League Spartan", sans-serif;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url(./images/bg-pattern-top-desktop.svg),
+    url(./images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: right 62vw bottom 56vh, left 20vw top 19vh;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1000px;
+  margin-bottom: 10rem;
+}
+
+.stat h1 {
+  font-size: 2.5rem;
+  color: var(--very-dark-magenta);
+  width: 290px;
+  margin-bottom: 1rem;
+}
+
+.stat p {
+  color: var(--dark-grayish-magenta);
+  width: 400px;
+  line-height: 1.5rem;
+}
+
+/***************STAR RATINGS ********************/
+.ratings {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ratings .review-rating {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--light-grayish-magenta);
+  padding: 1rem 2rem;
+  color: var(--very-dark-magenta);
+  font-weight: 700;
+  border-radius: 0.6245rem;
+  margin-left: -6rem;
+  margin-right: 6rem;
+}
+
+.ratings .report-rating {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--light-grayish-magenta);
+  padding: 1rem 2rem;
+  color: var(--very-dark-magenta);
+  font-weight: 700;
+  border-radius: 0.6245rem;
+  margin-left: -3rem;
+  margin-right: 3rem;
+}
+
+.ratings .tech-rating {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--light-grayish-magenta);
+  padding: 1rem 2rem;
+  color: var(--very-dark-magenta);
+  font-weight: 700;
+  border-radius: 0.6245rem;
+}
+
+.ratings .review-rating .stars,
+.ratings .report-rating .stars,
+.ratings .tech-rating .stars {
+  margin-right: 0.5rem;
+}
+
+/*************** CARDS *****************/
+
+.buyers {
+  display: flex;
+  width: 1000px;
+  
+}
+
+.buyer_1 {
+  background-color: var(--very-dark-magenta);
+  overflow: hidden;
+  border-radius: 0.6245rem;
+  width: 930px;
+  margin-right: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.buyer_2 {
+  background-color: var(--very-dark-magenta);
+  overflow: hidden;
+  border-radius: 0.6245rem;
+  width: 930px;
+  margin-right: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.buyer_3 {
+  background-color: var(--very-dark-magenta);
+  overflow: hidden;
+  border-radius: 0.6245rem;
+  width: 930px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/********************** CARD IMAGES, BUYER INFO AND STATEMENTS *************************/
+
+.buyer_info {
+  display: flex;
+  align-items: center;
+  padding: 2rem 1.5rem;
+}
+
+.buyer_info img {
+  border-radius: 100px;
+  width: 40px;
+  margin-right: .8rem;
+}
+
+.buyer_name p {
+  color: white;
+  font-weight: 700;
+}
+
+.buyer_name h3{
+  color: var(--soft-pink);
+  font-size: 13.1px;
+  font-weight: 700;
+  letter-spacing: .01rem;
+}
+
+.text{
+  padding: 0 1.5rem;
+  color: var(--white);
+  padding-bottom: 1.5rem;
+}
+
+
+@media only screen and (max-width:400px){
+
+  main{
+    background: url(./images/bg-pattern-top-mobile.svg),
+    url(./images/bg-pattern-bottom-mobile.svg) ;
+    background-repeat: no-repeat;
+    background-position: right 0vw bottom 72vh, left 0vw top 59vh;
+  }
+
+ .intro{
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 400px;
+  margin-bottom: 2rem;
+ }
+
+ .stat h1{
+  margin-top: 45rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  width: 290px;
+  text-align: center;
+ }
+
+ .stat p{
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  width: 290px;
+ }
+
+ .ratings{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .tech-rating, .report-rating, .review-rating{
+  flex-direction: column;
+ }
+
+ .ratings .review-rating{
+  margin-left: 0;
+  margin-right: 0;
+  padding: 1rem 4rem;
+ }
+
+ .ratings .report-rating{
+  margin-left: 0;
+  margin-right: 0;
+  padding: 1rem 3.2rem;
+ }
+
+ .ratings  .tech-rating{
+  padding: 1rem 4rem;
+ }
+
+
+ .buyers{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+ }
+
+ .buyer_1 {
+  background-color: var(--very-dark-magenta);
+  overflow: hidden;
+  border-radius: 0.6245rem;
+  width: 300px;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.buyer_2 {
+  background-color: var(--very-dark-magenta);
+  overflow: hidden;
+  border-radius: 0.6245rem;
+  width: 300px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-top: .5rem;
+}
+
+.buyer_3 {
+  background-color: var(--very-dark-magenta);
+  overflow: hidden;
+  border-radius: 0.6245rem;
+  width: 300px;
+  margin-right: 0;
+  margin-bottom: 2rem;
+  margin-top: 0.5rem;
+}
+
+
+}
+
+
+
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
