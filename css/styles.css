@@ -34,8 +34,8 @@ main {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: url(./images/bg-pattern-top-desktop.svg),
-    url(./images/bg-pattern-bottom-desktop.svg);
+  background: url(../images/bg-pattern-top-desktop.svg),
+    url(../images/bg-pattern-bottom-desktop.svg);
   background-repeat: no-repeat;
   background-position: right 62vw bottom 56vh, left 20vw top 19vh;
 }
@@ -45,7 +45,7 @@ main {
   justify-content: space-between;
   align-items: center;
   width: 1000px;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 
 .stat h1 {
@@ -59,6 +59,7 @@ main {
   color: var(--dark-grayish-magenta);
   width: 400px;
   line-height: 1.5rem;
+  font-weight: 500;
 }
 
 /***************STAR RATINGS ********************/
@@ -180,8 +181,8 @@ main {
 @media only screen and (max-width:400px){
 
   main{
-    background: url(./images/bg-pattern-top-mobile.svg),
-    url(./images/bg-pattern-bottom-mobile.svg) ;
+    background: url(../images/bg-pattern-top-mobile.svg),
+    url(../images/bg-pattern-bottom-mobile.svg) ;
     background-repeat: no-repeat;
     background-position: right 0vw bottom 72vh, left 0vw top 59vh;
   }
